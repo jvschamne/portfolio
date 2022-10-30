@@ -1,0 +1,259 @@
+/*import font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/*CSS reset*/
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    text-align: center;
+    width: 50vw;
+}
+
+h1 {
+    color: white;
+    font-size: 2.4rem;
+}
+
+#foto {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    top: 20%;
+    left: 60%;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    font-size: 1.8rem;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    z-index: 99999;
+    background-color: #2d2c2e;
+}
+
+#logo {
+    margin-right: 35vw;
+}
+
+.nav-item {
+    font-family: 'Raleway', 'sans-serif' !important;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.nav-item:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.15);
+}
+
+.secao {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#secao1,
+#secao2,
+#secao3 {
+    background-image: url("resources/spaceblack.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+
+#secao2 {
+    background-image: url("resources/app1.png");
+}
+
+#secao3 {
+    background-image: url("resources/wpp3.png");
+}
+
+#secao4 {
+    background-color: black;
+    height: 240vh;
+}
+
+#secao5 {
+    background-image: url('resources/code.png');
+    background-position: 0;
+}
+
+.titulo2 {
+    margin-top: 10vh;
+}
+
+#secao2>p {
+    color: white;
+    font-size: 1.3rem;
+    width: 80%;
+    margin-top: 10vh;
+}
+
+.cards {
+    margin-top: 5vh;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin: 10px;
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 15px 15px 50px -30px #7345d6;
+}
+
+.card>img {
+    height: 18vh;
+    width: 18vh;
+    margin-bottom: 3vh;
+}
+
+.card:hover,
+.botao:hover,
+.icon:hover {
+    transition: all 0.5s ease;
+    animation: reverse 2s;
+    transform: scale(1.05);
+}
+
+.projetos {
+    margin-top: 5vh;
+    width: 85vw;
+    height: 60%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto {
+    color: black;
+    background-color: white;
+    margin: 10px;
+    width: 40vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.projeto>img {
+    margin-top: 5vh;
+    width: 60%;
+    margin-bottom: 3vh;
+}
+
+.projeto>p {
+    color: black;
+    margin-top: 2vh;
+    width: 80%;
+}
+
+h3 {
+    color: #7345d6;
+}
+
+.botao {
+    padding: 0.5rem;
+    color: white;
+    background-color: #7345d6;
+    border-radius: 35px;
+    position: absolute;
+    bottom: 5%;
+}
+
+.contacts {
+    margin-top: 20vh;
+    font-size: 1.9rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts>.card {
+    background-color: white;
+}
+
+.contacts>.icon {
+    margin-top: 5vh;
+    color: #2d2c2e;
+    cursor: pointer;
+}
+
+
+/*
+#7345d6;
+linear-gradient(67deg, rgba(3,160,254,1) 14%, rgba(214,0,255,0.5718662464985995) 100%);
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #7345d6;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(67deg, rgba(3, 160, 254, 1) 14%, rgba(214, 0, 255, 0.5718662464985995) 100%);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #601cf1;
+}
